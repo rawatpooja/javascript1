@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            //textual data stroed as string ,enclosed with double and single qoutes and also with backticks
+            function sum(a,b){
+                return a+b;
+            }
+            console.log(`1+2=${sum(1,2)}`)
+            let guestlist=`guests: john pooja sachin
+            `;
+            console.log(guestlist);
+            let str1="hello\nworld";
+            let str2=`hello
+            world`;
+            console.log(str1==str2);
+            console.log("\u00A9");
+            console.log("\u{20331}");
+            console.log( "\u{1F60D}" );
+            console.log(`My\n`.length);
+            let str=`hello`;
+            console.log(str[0]);
+            console.log(str.charAt(0));
+            console.log(str[str.length-1]);
+            let str0=`hello`;
+            console.log(str0[1000]);
+            console.log(str0.charAt(1000));
+            let st='Hi';
+            st[0] ='h';
+            console.log(st[0]);// not changed
+            let sr= 'Hi';
+            sr = 'h'+sr[1];//replace the string
+            console.log(sr);
+            //tolowercase and touppercase
+            console.log("POOJA".toLowerCase());
+            console.log("pooja".toUpperCase());
+            console.log("pooja"[3].toUpperCase());
+            //indexof
+            let srt="my name is pooja";
+            console.log(srt.indexOf('pooja'));
+            console.log(srt.indexOf('name'));
+            console.log(srt.indexOf('my'));
+            console.log(srt.indexOf('pooja',2))
+            //bitwise not
+            console.log(~2)
+            //includes
+            console.log("my name is pooja".includes("rawat"));
+            console.log("my name is pooja".includes("pooja"));
+            console.log("my name is pooja".includes("rawat",4));
+            console.log("poojarawat".startsWith("pooj"))
+            console.log("poojarawat".endsWith("wat"))
+            //getting substring :- three methods substring,substr,slice
+            //str.slice(start [,end]) but not inculding end
+            let s="stringify";
+            console.log(s.slice(0,4));
+            console.log(s.slice(2));//start from to last 
+            //comparing string - lowercase letter greater then uppercASE
+            console.log('a'>'A');
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //numbers
+            let billon=1e9;
+            console.log(billon);
+            let mcs=1e-6;
+            console.log(mcs);
+            console.log(0xff);
+            console.log(0xFF);// both same output
+            let a=0b11111111;
+            let b=0o377;
+            console.log(a===b);
+            //num.toString(base)
+            let num =255;
+            console.log(num.toString(16));
+            console.log(num.toString(4));
+            console.log(123456..toString(36));
+            console.log((123456).toString(36));
+            //rounding : three methods 1. Math.floor 2. Math.ceil 3. Math.round
+            //we have 1.2345 and want to round it to 2 digits, getting only 1.23....two ways to do
+            //1. multiple and divide
+            let num1= 1.2345
+            console.log(Math.round(num1*100)/100);
+            //2. toFixed way
+            let n1=1.2345;
+            console.log(n1.toFixed(2));
+            let nu=12.36;
+            console.log(nu.toFixed(1));//same as math.round nerast value
+            let n2=12.34;
+            console.log(+n2.toFixed(5));
+            console.log(n2.toFixed(5));
+            console.log(1e500);
+            console.log(0.1+0.2==0.3);
+            console.log(0.1+0.2);
+            let sum=0.1+0.2;
+            console.log(sum.toFixed(2));//to fixed retrun a string
+            console.log(+sum.toFixed(2));// adding unary plus to get a number
+            //isNAN
+            console.log(isNaN(NaN));//convert argument to number and then tests it for being NaN
+            console.log(isNaN("str"));
+            console.log(NaN===NaN);
+            //  isFinite  convert argument to number and returns true i any regular number
+            console.log(isFinite("15"));
+            console.log(isFinite("str"));
+            console.log(isFinite(Infinity));
+            //parseInt - its has two parameters : str and radix
+            console.log(parseInt('100px'));
+            console.log(parseInt('12.34'));
+            console.log(parseInt('a34'))//nan first symbol stops the process
+            console.log(parseInt('0xff',16));//sec. parameter specifies the base of the string value
+            //parseFloat
+            console.log(parseFloat('12.3.4.5'))
+            console.log(parseFloat("23em"));
+            //Math.random
+            console.log(Math.random());
+            console.log(Math.random());
+            //Math .max or min
+            console.log(Math.max(3,6,10,20));
+            console.log(Math.min(18,20,56,78));
+            //Math.pow(n,power)
+            console.log(Math.pow(2,10));
+
+            function calculatecirclearea(radius){
+                console.log(Math.PI*Math.pow(radius,2))
+            }calculatecirclearea(1);
+            console.log(Math.max(2,6,8,'one',23));
+            //array as parameters using spread(...)
+            let array=[2,4,7,8,9];
+           console.log(Math.max(...array));
+           //using apply()
+           let numbers=[3,6,89,23];
+           console.log(Math.max.apply(null,numbers));
+           //Math.sqrt
+           console.log(Math.sqrt(25));
+           //Math.trunc
+           console.log(Math.trunc(5.6))
+           //Math.ceil
+           console.log(Math.ceil(2.3));
+           //math.floor
+           console.log(Math.floor(0.1));
+           slotOne = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+           slotTwo = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+           slotThree = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+           console.log(slotOne);
+           console.log(slotTwo);
+           console.log(slotThree);
+
+
+
+            
+        </script>
+    </body>
+</html>
